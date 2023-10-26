@@ -1,0 +1,38 @@
+<%- include('include/_header') %>
+
+<main id ="site-main">
+    <div class="container">
+        <div class="form-title text-center">
+           <h2 class="text-dark">
+            Search Result
+           </h2>
+           <span class="text-light">
+            Use the below form to search Students Result
+           </span>
+        </div>
+
+       <!--search student form-->
+             <!--Form handling-->
+      <form action="/search-student-result" id="search_student_result">
+        <div class="new_student">
+           <div class="form-group">
+               <label for="rollno" class="text-light">Roll No</label>
+               <input type="number" required name="rollno" value="" placeholder="1">
+           </div>
+           <div class="form-group">
+               <label for="dob" class="text-light">Date of Birth</label>
+               <input type="date" required name="dob" value="" placeholder="10-02-2000">
+           </div>
+           <div class="form-group">
+            <button type="submit" class="btn text-dark update">Search</button>
+           </div>
+        </div>
+       </form>
+
+       
+       
+    </div>
+</main>
+
+<%- include('include/_footer') %>
+

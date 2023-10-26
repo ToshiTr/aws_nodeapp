@@ -1,0 +1,37 @@
+<%- include('include/_header') %>
+
+    <!--Main site -->
+    <main id ="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-student-result" class="border-shadow">
+                   <span class="text-gradient">Add Result <i class="fa-solid fa-user"></i></span>
+                </a>
+
+            </div>
+
+            <!--Form handling-->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>DOB</th>
+                            <th>Score</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <%- include('include/_table') %>
+                      
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+
+
+
+<%- include('include/_footer') %>

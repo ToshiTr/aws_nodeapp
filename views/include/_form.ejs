@@ -1,0 +1,24 @@
+      <!--Form handling-->
+      <form action="api/save-result" id="add_student_result" method="POST">
+        <div class="new_student">
+           <div class="form-group">
+               <label for="rollno" class="text-light">Roll No</label>
+               <input type="number" required name="rollno" value="" placeholder="1">
+           </div>
+           <div class="form-group">
+               <label for="name" class="text-light">Name</label>
+               <input type="text" name="name" required value="" placeholder="John">
+           </div>
+           <div class="form-group">
+               <label for="dob" class="text-light">Date of Birth</label>
+               <input type="date" name="dob" required value="2010-02-20">
+           </div>
+           <div class="form-group">
+               <label for="score" class="text-light">Score</label>
+               <input type="number" name="score" required value="" placeholder="90">
+           </div>
+           <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+        </div>
+       </form>

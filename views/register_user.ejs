@@ -1,0 +1,23 @@
+<%- include('include/_header') %>
+
+    <!--Main site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="login text-center" class="text-dark border-shadow">
+                Register User
+            </div>
+            <form action="api/save-user" id="add_user" method="POST">
+                <div class="new_student">               
+                    <%- include('include/_userform') %>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Register</button>
+                    </div>
+                </div>
+            </form>
+            <p class="text-center"> Already have an Account?<a href="/">Login</a></p>
+        </div>
+    </main>
+
+
+
+    <%- include('include/_footer') %>
