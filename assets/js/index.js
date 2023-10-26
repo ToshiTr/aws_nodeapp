@@ -12,7 +12,7 @@ $("#update_student_result").submit(function (event) {
         data[n['name']] = n['value'];
     })
     var request = {
-        "url": `${apiBaseUrl}/api/update-result/${data.id}`,
+        "url": `http://13.127.164.162:3000/api/update-result/${data.id}`,
         "method": "PUT",
         "data": data,
     }
@@ -31,7 +31,7 @@ if (window.location.pathname == "/teacher") {
         var id = $(this).attr("data-id");
 
         var request = {
-            "url": `${apiBaseUrl}/api/delete-result/${id}`,
+            "url": `http://13.127.164.162:3000/api/delete-result/${id}`,
             "method": "DELETE"
         }
 
